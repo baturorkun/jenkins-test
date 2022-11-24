@@ -7,12 +7,12 @@ pipeline {
   }
        
    
-    stages {
+   stages {
         stage('Main') {
             steps {
-                sh 'ip r'
+                sh 'lsb_release -a'
             }
         }
-    }
+   }
   
 }
