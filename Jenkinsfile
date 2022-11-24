@@ -10,7 +10,7 @@ pipeline {
    stages {
         stage('Main') {
             steps {
-                sh 'lsb_release -a'
+                sh 'cat /etc/os-release'
             }
         }
    }
